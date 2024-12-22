@@ -33,7 +33,7 @@ const BlogCard = () => {
 
   return (
     <div className="space-y-10">
-      {blogs.map((blog, index) => (
+      {blogs.map((blog) => (
         <Link href={`/blog/${blog.id}`} key={blog.id}> {/* Linking to dynamic route */}
           <a>
             <div className="flex flex-col items-start bg-white rounded-lg shadow-lg overflow-hidden">

@@ -216,26 +216,30 @@ const Sidebar: React.FC = () => {
         <input type="range" min="0" max="1000" className="w-full" />
       </div>
 
-      {/* Find by Color Section */}
-      <div className="mb-6 flex flex-col gap-5">
-        <h3 className="font-semibold mb-2">Find by Color</h3>
-        <div className="flex flex-wrap gap-2">
-          {[
-            { color: "red-500", label: "Red" },
-            { color: "blue-500", label: "Blue" },
-            { color: "amber-700", label: "Brown" },
-            { color: "green-500", label: "Green" },
-            { color: "purple-700", label: "Purple" },
-            { color: "sky-500", label: "Sky" },
-          ].map(({ color, label }) => (
-            <div key={label} className="flex gap-2 items-center">
-              <input type="checkbox" />
-              <div className={`w-8 h-8 rounded-full bg-${color}`} />
-              <span>{label}</span>
-            </div>
-          ))}
-        </div>
+     {/* Find by Color Section */}
+{/* Find by Color Section */}
+<div className="mb-6">
+  <h3 className="font-semibold mb-4 text-lg">Find by Color</h3>
+  <div className="flex flex-wrap gap-4">
+    {[
+      { color: "bg-red-500", label: "Red" },
+      { color: "bg-blue-500", label: "Blue" },
+      { color: "bg-amber-700", label: "Brown" },
+      { color: "bg-green-500", label: "Green" },
+      { color: "bg-purple-700", label: "Purple" },
+      { color: "bg-sky-300", label: "Sky" },
+    ].map(({ color, label }) => (
+      <div
+        key={label}
+        className="flex items-center gap-2 text-sm justify-start"
+      >
+        <div className={`${color} w-6 h-6 rounded-full mr-2`} />
+        <span>{label}</span>
       </div>
+    ))}
+  </div>
+</div>
+
     </aside>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FiHeart, FiShoppingCart } from "react-icons/fi";
 import { FaMagnifyingGlassPlus } from "react-icons/fa6";
-import Footer from "../components/Footer/Footer";
+
 
 interface Product {
   id: number;

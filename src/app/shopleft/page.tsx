@@ -2,11 +2,6 @@ import Footer from "../components/Footer/Footer";
 import ProductCard from "./ProductCard";
 import Sidebar from "./Sidebar";
 
-const products = [
-  { image: "/images/product1.jpg", name: "Product 1", rating: 4, price: 199 },
-  { image: "/images/product2.jpg", name: "Product 2", rating: 5, price: 299 },
-  { image: "/images/product3.jpg", name: "Product 3", rating: 3, price: 99 },
-];
 
 const ShopLeft: React.FC = () => {
   return (
